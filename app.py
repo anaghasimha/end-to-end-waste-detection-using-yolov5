@@ -1,3 +1,4 @@
-from wasteDetection.logger import logging
+from wasteDetection.pipeline.training_pipeline import TrainPipeline
 
-logging.info("This is an info message")
+obj = TrainPipeline()
+obj.run_pipeline()
